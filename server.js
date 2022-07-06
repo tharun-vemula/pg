@@ -20,7 +20,7 @@ async function startServer(){
         res.send('Apollo Server is On');
     })
 
-    app.listen(3000, () => {
+    app.listen(process.env.PORT, () => {
         console.log('Server is running');
     })
 }
